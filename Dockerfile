@@ -4,7 +4,7 @@ WORKDIR /go/src
 
 RUN apk add --no-cache git gcc g++ binutils
 
-ARG HUGO_VERSION=v0.57.0
+ARG HUGO_VERSION=v0.57.1
 RUN git clone --single-branch --branch ${HUGO_VERSION} https://github.com/gohugoio/hugo.git
 
 WORKDIR /go/src/hugo
